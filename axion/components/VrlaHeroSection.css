@@ -1,0 +1,164 @@
+/* ══════════════════════════════════════
+   VRLA HERO SECTION STYLES
+   ══════════════════════════════════════ */
+
+.vrla-hero {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    background: linear-gradient(180deg, #0a1628 0%, #0d1b3e 100%);
+}
+
+.vrla-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.vrla-hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vrla-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(10, 22, 40, 0.6) 0%, rgba(10, 22, 40, 0.85) 60%, rgba(10, 22, 40, 0.95) 100%);
+    z-index: 1;
+}
+
+.vrla-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 550px;
+    margin: 0;
+    padding: 7rem 2rem 3rem 5rem;
+    text-align: left;
+    color: #fff;
+}
+
+/* ── Heading ── */
+.vrla-hero-heading {
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 0 0 1.2rem;
+    line-height: 1.15;
+    text-transform: uppercase;
+}
+
+.vrla-hero-heading .highlight {
+    background: linear-gradient(135deg, #0EA5E9, #3B82F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ── Description ── */
+.vrla-hero-desc {
+    font-size: 13.5px;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 450px;
+    margin: 0 0 1.8rem;
+}
+
+/* ── Columns ── */
+.vrla-hero-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.vrla-hero-col-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0EA5E9;
+    margin: 0 0 0.75rem;
+}
+
+.vrla-hero-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.vrla-hero-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.45;
+}
+
+.vrla-list-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(14, 165, 233, 0.15);
+    border: 1.5px solid rgba(14, 165, 233, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+}
+
+.vrla-list-icon svg {
+    width: 12px;
+    height: 12px;
+    color: #0EA5E9;
+}
+
+/* ── CTA ── */
+.vrla-hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 2rem;
+    background: linear-gradient(135deg, #0EA5E9, #2563EB);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.vrla-hero-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(14, 165, 233, 0.35);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .vrla-hero-heading {
+        font-size: 32px;
+    }
+
+    .vrla-hero-desc {
+        font-size: 14px;
+    }
+
+    .vrla-hero-columns {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .vrla-hero-content {
+        padding: 5rem 1.5rem 3rem;
+    }
+}

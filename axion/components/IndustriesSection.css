@@ -1,0 +1,226 @@
+/* ══════════════════════════════════════
+   INDUSTRIES SECTION STYLES
+   ══════════════════════════════════════ */
+
+/* ── Intro Block ── */
+.industries-intro {
+    background: #f8f9fa;
+    padding: 4rem 0 2.5rem;
+    border-radius: 100px 100px 0 0;
+    position: relative;
+    z-index: 1;
+    margin-top: -6rem;
+}
+
+.industries-intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+}
+
+.industries-label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.industries-label-bar {
+    width: 3px;
+    height: 18px;
+    background: #0EA5E9;
+    border-radius: 2px;
+}
+
+.industries-label-text {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #0EA5E9;
+    text-transform: uppercase;
+}
+
+.industries-intro-heading {
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.4;
+    margin: 0 0 0;
+    width: 100%;
+}
+
+.industries-intro-heading .grey-text {
+    color: #64748b;
+}
+
+/* ── Industry Cards Container ── */
+.industries-cards {
+    background: #f8f9fa;
+    padding: 2.5rem 0 10rem;
+}
+
+.industries-cards-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+/* ── Single Industry Card ── */
+.industry-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.industry-card.reversed {
+    direction: ltr;
+}
+
+/* ── Card Image ── */
+.industry-image-wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0 100px 0 100px;
+}
+
+.industry-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+}
+
+/* ── Image Overlay ── */
+.industry-image-overlay {
+    position: absolute;
+    inset: 0;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    text-align: center;
+}
+
+.industry-image-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.25;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.industry-image-btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: #0EA5E9;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.industry-image-btn:hover {
+    background: #0284c7;
+    transform: translateY(-1px);
+}
+
+/* ── Card Content ── */
+.industry-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.industry-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 0.5rem;
+    line-height: 1.25;
+}
+
+.industry-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+    color: #0EA5E9;
+    margin: 0 0 1rem;
+}
+
+.industry-description {
+    font-size: 13px;
+    color: #475569;
+    line-height: 1.7;
+    margin: 0 0 1.5rem;
+}
+
+/* ── Feature Tags 2×2 Grid ── */
+.industry-tags-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.industry-tag {
+    display: flex;
+    align-items: center;
+    padding: 0.65rem 0.9rem;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 12.5px;
+    color: #334155;
+    line-height: 1.35;
+}
+
+/* ── CTA Button ── */
+.industry-cta-btn {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 0.6rem 2rem;
+    background: #0EA5E9;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.industry-cta-btn:hover {
+    background: #0284c7;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(14, 165, 233, 0.3);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .industry-card {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .industry-title {
+        font-size: 22px;
+    }
+
+    .industry-tags-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .industry-image-title {
+        font-size: 20px;
+    }
+}

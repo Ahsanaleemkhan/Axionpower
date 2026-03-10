@@ -1,0 +1,165 @@
+/* ══════════════════════════════════════
+   COMPLIANCE SECTION STYLES
+   ══════════════════════════════════════ */
+
+.compliance-section {
+    background: #0a0a14;
+    padding: 0 0 8rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    border-radius: 100px 100px 0 0;
+    margin-top: -6rem;
+    position: relative;
+    z-index: 2;
+}
+
+.compliance-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    width: 100%;
+}
+
+/* ── Two-column grid ── */
+.compliance-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+/* ── Column ── */
+.compliance-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── Heading ── */
+.compliance-heading {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 1.1rem;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+}
+
+/* ── Dark Card ── */
+.compliance-card {
+    display: flex;
+    gap: 1.25rem;
+    background: #111827;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    padding: 1.1rem;
+    margin-bottom: 1.5rem;
+    flex: 1;
+}
+
+.card-image-wrap {
+    flex-shrink: 0;
+    width: 190px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 0;
+}
+
+.card-description {
+    font-size: 0.8rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin: 0 0 1rem;
+}
+
+.card-button {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 0.55rem 1.6rem;
+    background: #0EA5E9;
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.card-button:hover {
+    background: #38BDF8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(14, 165, 233, 0.3);
+}
+
+/* ── Key Highlights ── */
+.highlights-section {
+    margin-top: 0;
+}
+
+.highlights-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 0.75rem;
+}
+
+.highlights-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.check-icon {
+    flex-shrink: 0;
+}
+
+.highlight-item span {
+    font-size: 0.82rem;
+    color: #cbd5e1;
+    line-height: 1.4;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .compliance-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .compliance-heading {
+        font-size: 1.5rem;
+    }
+
+    .compliance-card {
+        flex-direction: column;
+    }
+
+    .card-image-wrap {
+        width: 100%;
+        height: 200px;
+    }
+}

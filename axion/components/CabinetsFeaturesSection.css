@@ -1,0 +1,129 @@
+/* ══════════════════════════════════════
+   CABINETS FEATURES SECTION
+   ══════════════════════════════════════ */
+
+.cabinets-feat-section {
+    background: #0a0a14;
+    padding: 5rem 0 10rem;
+    border-radius: 100px 100px 0 0;
+    margin-top: -6rem;
+    position: relative;
+    z-index: 4;
+}
+
+.cabinets-feat-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* ── Text Side ── */
+.cabinets-feat-text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── Label with left bar (blue text) ── */
+.cabinets-feat-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-left: 3px solid #0EA5E9;
+    padding-left: 0.7rem;
+    color: #0EA5E9;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* ── Feature list ── */
+.cabinets-feat-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.cabinets-feat-list li {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.cabinets-feat-list li::before {
+    content: "●";
+    position: absolute;
+    left: 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 8px;
+    top: 6px;
+}
+
+.cabinets-feat-list li.bold {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.cabinets-feat-list li.bold::before {
+    color: #ffffff;
+}
+
+/* ── Image Side ── */
+.cabinets-feat-image {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cabinets-feat-img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 12px 0 12px 0;
+    object-fit: cover;
+}
+
+/* ── Dark bg pad (bottom-right) ── */
+.cabinets-feat-pad {
+    position: absolute;
+    z-index: 2;
+    background: #0a0a14;
+    padding: 55px 65px;
+}
+
+.cabinets-feat-pad.bottom-right {
+    bottom: 0;
+    right: 0;
+    border-radius: 80px 0 0 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .cabinets-feat-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .cabinets-feat-section {
+        border-radius: 60px 60px 0 0;
+        padding: 3.5rem 0 5rem;
+    }
+
+    .cabinets-feat-list li {
+        font-size: 14px;
+    }
+
+    .cabinets-feat-list li.bold {
+        font-size: 16px;
+    }
+}

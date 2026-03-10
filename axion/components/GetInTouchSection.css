@@ -1,0 +1,244 @@
+/* ══════════════════════════════════════
+   GET IN TOUCH SECTION STYLES
+   ══════════════════════════════════════ */
+
+.getintouch-section {
+    position: relative;
+    z-index: 8;
+    margin-top: -6rem;
+    padding: 4rem 2.5rem 10rem;
+    background: #f0f1f3;
+    border-radius: 100px 100px 0 0;
+}
+
+.getintouch-card {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 40px;
+    padding: 3rem 3rem 2.5rem;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* ── Header ── */
+.git-label {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #64748b;
+    text-transform: uppercase;
+    margin: 0 0 1rem;
+}
+
+.git-heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.3;
+    margin: 0 0 1.5rem;
+}
+
+/* ── Tabs ── */
+.git-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-bottom: 2rem;
+}
+
+.git-tab {
+    padding: 0.6rem 1.5rem;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1.5px solid #d1d5db;
+    background: #ffffff;
+    color: #334155;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.git-tab:hover {
+    border-color: #0EA5E9;
+    color: #0EA5E9;
+}
+
+.git-tab.active {
+    background: #0EA5E9;
+    color: #ffffff;
+    border-color: #0EA5E9;
+}
+
+/* ── Form ── */
+.git-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.git-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.git-row.full {
+    grid-template-columns: 1fr;
+}
+
+/* ── Field ── */
+.git-field {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid #f1f5f9;
+    border-right: 1px solid #f1f5f9;
+}
+
+.git-row.full .git-field {
+    border-right: none;
+}
+
+.git-field:last-child {
+    border-right: none;
+}
+
+.git-field-icon {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    color: #94a3b8;
+}
+
+.git-field input,
+.git-field textarea,
+.git-field select {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #0f172a;
+    background: transparent;
+    font-family: inherit;
+    resize: none;
+}
+
+.git-field input::placeholder,
+.git-field textarea::placeholder {
+    color: #94a3b8;
+}
+
+.git-field select {
+    color: #94a3b8;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.git-field select option {
+    color: #0f172a;
+}
+
+.git-select-wrap {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.git-select-wrap select {
+    width: 100%;
+    padding-right: 1.5rem;
+}
+
+.git-select-wrap::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #94a3b8;
+    pointer-events: none;
+}
+
+/* ── Submit ── */
+.git-submit-row {
+    padding: 1.5rem 1.25rem 0;
+}
+
+.git-submit-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1.75rem;
+    background: #0EA5E9;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.git-submit-btn:hover {
+    background: #0284c7;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(14, 165, 233, 0.3);
+}
+
+.git-submit-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* ── Success/Error ── */
+.git-status {
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-top: 1rem;
+}
+
+.git-status.success {
+    background: #f0fdf4;
+    color: #16a34a;
+    border: 1px solid #bbf7d0;
+}
+
+.git-status.error {
+    background: #fef2f2;
+    color: #dc2626;
+    border: 1px solid #fecaca;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .getintouch-card {
+        padding: 2rem 1.5rem;
+        border-radius: 18px;
+    }
+
+    .git-heading {
+        font-size: 22px;
+    }
+
+    .git-tabs {
+        flex-wrap: wrap;
+    }
+
+    .git-row {
+        grid-template-columns: 1fr;
+    }
+
+    .git-field {
+        border-right: none;
+    }
+}

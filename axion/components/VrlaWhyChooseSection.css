@@ -1,0 +1,138 @@
+/* ══════════════════════════════════════
+   VRLA WHY CHOOSE US SECTION
+   ══════════════════════════════════════ */
+
+.vrla-why {
+    position: relative;
+    background: #0a0a1a;
+    padding: 5rem 2rem 10rem;
+    border-radius: 100px 100px 0 0;
+    margin-top: -6rem;
+    z-index: 3;
+    overflow: hidden;
+}
+
+/* Subtle dark-blue gradient glow at top */
+.vrla-why::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(180deg, rgba(13, 37, 75, 0.6) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+.vrla-why-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* ── Heading ── */
+.vrla-why-heading {
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+.vrla-why-heading .highlight {
+    color: #0EA5E9;
+    display: block;
+}
+
+/* ── Cards Grid ── */
+.vrla-why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.1rem;
+}
+
+/* ── Card Base ── */
+.vrla-why-card {
+    border-radius: 14px;
+    padding: 1.75rem 1.5rem;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.vrla-why-card:hover {
+    transform: translateY(-3px);
+}
+
+/* ── White Card ── */
+.vrla-why-card--white {
+    background: #ffffff;
+}
+
+.vrla-why-card--white .vrla-why-card-num {
+    color: #0EA5E9;
+}
+
+.vrla-why-card--white .vrla-why-card-text {
+    color: #1e293b;
+}
+
+/* ── Blue Card ── */
+.vrla-why-card--blue {
+    background: linear-gradient(135deg, #0EA5E9, #2563EB);
+}
+
+.vrla-why-card--blue .vrla-why-card-num {
+    color: #ffffff;
+}
+
+.vrla-why-card--blue .vrla-why-card-text {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* ── Card Content ── */
+.vrla-why-card-num {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+}
+
+.vrla-why-card-text {
+    font-size: 13.5px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+    .vrla-why-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .vrla-why-heading {
+        font-size: 42px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .vrla-why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vrla-why-heading {
+        font-size: 36px;
+    }
+
+    .vrla-why {
+        padding: 4rem 1.5rem;
+    }
+}

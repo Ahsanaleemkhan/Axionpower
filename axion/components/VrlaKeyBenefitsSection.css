@@ -1,0 +1,90 @@
+/* ══════════════════════════════════════
+   VRLA KEY BENEFITS SECTION
+   ══════════════════════════════════════ */
+
+.vrla-benefits {
+    position: relative;
+    padding: 4rem 2rem 10rem;
+    background: linear-gradient(135deg, #0c6bbf 0%, #1a5faa 50%, #1e4f91 100%);
+    border-radius: 100px 100px 0 0;
+    margin-top: -6rem;
+    z-index: 2;
+}
+
+/* ── Heading ── */
+.vrla-benefits-heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 2.5rem;
+}
+
+/* ── Grid ── */
+.vrla-benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ── Card ── */
+.vrla-benefit-card {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.vrla-benefit-card:hover {
+    transform: translateY(-3px);
+}
+
+.vrla-benefit-card-img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.vrla-benefit-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vrla-benefit-card-body {
+    padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.vrla-benefit-card-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 0.35rem;
+    line-height: 1.3;
+}
+
+.vrla-benefit-card-desc {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .vrla-benefits {
+        padding: 3rem 1.5rem 4rem;
+        border-radius: 40px 40px 0 0;
+    }
+
+    .vrla-benefits-heading {
+        font-size: 22px;
+    }
+
+    .vrla-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}

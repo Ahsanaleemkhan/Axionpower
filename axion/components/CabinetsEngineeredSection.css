@@ -1,0 +1,110 @@
+/* ══════════════════════════════════════
+   CABINETS ENGINEERED SECTION
+   ══════════════════════════════════════ */
+
+.cabinets-eng-section {
+    background: #0a0a14;
+    padding: 5rem 0 10rem;
+    border-radius: 100px 100px 0 0;
+    margin-top: -6rem;
+    position: relative;
+    z-index: 2;
+}
+
+.cabinets-eng-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* ── Text Side ── */
+.cabinets-eng-text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── Label with left bar ── */
+.cabinets-eng-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-left: 3px solid #ffffff;
+    padding-left: 0.7rem;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* ── Description ── */
+.cabinets-eng-desc {
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* ── Image Side ── */
+.cabinets-eng-image {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cabinets-eng-img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 12px 0 12px 0;
+    object-fit: cover;
+}
+
+/* ── Bolt Icons ── */
+.cabinets-eng-bolt {
+    position: absolute;
+    z-index: 2;
+    background: #0a0a14;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 65px;
+}
+
+.cabinets-eng-bolt svg {
+    width: 55px;
+    height: auto;
+}
+
+.cabinets-eng-bolt.top-left {
+    top: 0;
+    left: 0;
+    border-radius: 0 0 80px 0;
+}
+
+.cabinets-eng-bolt.bottom-right {
+    bottom: 0;
+    right: 0;
+    border-radius: 80px 0 0 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .cabinets-eng-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .cabinets-eng-desc {
+        font-size: 17px;
+    }
+
+    .cabinets-eng-section {
+        border-radius: 60px 60px 0 0;
+        padding: 3.5rem 0 3rem;
+    }
+}

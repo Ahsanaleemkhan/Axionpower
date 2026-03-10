@@ -1,0 +1,139 @@
+/* ══════════════════════════════════════
+   CABINETS WHY CHOOSE US SECTION
+   ══════════════════════════════════════ */
+
+.cab-why {
+    position: relative;
+    background: #0a0a1a;
+    padding: 5rem 2rem 10rem;
+    border-radius: 100px 100px 0 0;
+    margin-top: -6rem;
+    z-index: 7;
+    overflow: hidden;
+}
+
+/* Subtle dark-blue gradient glow at top */
+.cab-why::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(180deg, rgba(13, 37, 75, 0.6) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+.cab-why-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* ── Heading ── */
+.cab-why-heading {
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+.cab-why-heading .highlight {
+    color: #0EA5E9;
+    display: block;
+}
+
+/* ── Cards Grid ── */
+.cab-why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.1rem;
+}
+
+/* ── Card Base ── */
+.cab-why-card {
+    border-radius: 14px;
+    padding: 1.75rem 1.5rem;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.cab-why-card:hover {
+    transform: translateY(-3px);
+}
+
+/* ── White Card ── */
+.cab-why-card--white {
+    background: #ffffff;
+}
+
+.cab-why-card--white .cab-why-card-num {
+    color: #0EA5E9;
+}
+
+.cab-why-card--white .cab-why-card-text {
+    color: #1e293b;
+}
+
+/* ── Blue Card ── */
+.cab-why-card--blue {
+    background: linear-gradient(135deg, #0EA5E9, #2563EB);
+}
+
+.cab-why-card--blue .cab-why-card-num {
+    color: #ffffff;
+}
+
+.cab-why-card--blue .cab-why-card-text {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* ── Card Content ── */
+.cab-why-card-num {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+}
+
+.cab-why-card-text {
+    font-size: 13.5px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+    .cab-why-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .cab-why-heading {
+        font-size: 42px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .cab-why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cab-why-heading {
+        font-size: 36px;
+    }
+
+    .cab-why {
+        padding: 4rem 1.5rem;
+        border-radius: 60px 60px 0 0;
+    }
+}

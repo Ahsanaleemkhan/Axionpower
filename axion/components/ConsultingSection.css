@@ -1,0 +1,166 @@
+/* ══════════════════════════════════════
+   CONSULTING HUB SECTION
+   ══════════════════════════════════════ */
+
+.consulting-section {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 50%, #075985 100%);
+    padding: 5rem 0 10rem;
+    overflow: hidden;
+    border-radius: 100px 100px 0 0;
+}
+
+.consulting-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* ── Left Content ── */
+.consulting-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.consulting-label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.consulting-label-bar {
+    width: 3px;
+    height: 18px;
+    background: #ffffff;
+    border-radius: 2px;
+}
+
+.consulting-label-text {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.consulting-heading {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.15;
+    margin: 0 0 1.5rem;
+}
+
+.consulting-desc {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.75;
+    margin: 0 0 2rem;
+    max-width: 440px;
+}
+
+.consulting-btn {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 0.65rem 2rem;
+    background: linear-gradient(90deg, #0EA5E9 0%, #0369a1 100%);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.consulting-btn:hover {
+    background: #1e293b;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* ── Right Image Area ── */
+.consulting-right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.consulting-image-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.consulting-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* ── Floating Tooltip Cards ── */
+.consulting-tooltips {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.consulting-tooltip {
+    position: absolute;
+    background: #ffffff;
+    color: #334155;
+    font-size: 11.5px;
+    line-height: 1.4;
+    padding: 0.6rem 0.9rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    max-width: 180px;
+    pointer-events: auto;
+}
+
+.consulting-tooltip.tt-1 {
+    top: 8%;
+    right: -30px;
+}
+
+.consulting-tooltip.tt-2 {
+    top: 35%;
+    left: -40px;
+}
+
+.consulting-tooltip.tt-3 {
+    top: 50%;
+    right: -35px;
+}
+
+.consulting-tooltip.tt-4 {
+    bottom: 5%;
+    left: -40px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .consulting-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .consulting-heading {
+        font-size: 28px;
+    }
+
+    .consulting-image-wrap {
+        max-width: 100%;
+    }
+
+    .consulting-tooltip {
+        display: none;
+    }
+}

@@ -1,0 +1,138 @@
+/* ══════════════════════════════════════
+   WET CELL WHY CHOOSE US SECTION
+   ══════════════════════════════════════ */
+
+.wetcell-why {
+    position: relative;
+    background: #0a0a1a;
+    padding: 5rem 2rem 10rem;
+    border-radius: 100px 100px 0 0;
+    margin-top: -6rem;
+    z-index: 3;
+    overflow: hidden;
+}
+
+/* Subtle dark-blue gradient glow at top */
+.wetcell-why::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(180deg, rgba(13, 37, 75, 0.6) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+.wetcell-why-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* ── Heading ── */
+.wetcell-why-heading {
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+.wetcell-why-heading .highlight {
+    color: #0EA5E9;
+    display: block;
+}
+
+/* ── Cards Grid ── */
+.wetcell-why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.1rem;
+}
+
+/* ── Card Base ── */
+.wetcell-why-card {
+    border-radius: 14px;
+    padding: 1.75rem 1.5rem;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.wetcell-why-card:hover {
+    transform: translateY(-3px);
+}
+
+/* ── White Card ── */
+.wetcell-why-card--white {
+    background: #ffffff;
+}
+
+.wetcell-why-card--white .wetcell-why-card-num {
+    color: #0EA5E9;
+}
+
+.wetcell-why-card--white .wetcell-why-card-text {
+    color: #1e293b;
+}
+
+/* ── Blue Card ── */
+.wetcell-why-card--blue {
+    background: linear-gradient(135deg, #0EA5E9, #2563EB);
+}
+
+.wetcell-why-card--blue .wetcell-why-card-num {
+    color: #ffffff;
+}
+
+.wetcell-why-card--blue .wetcell-why-card-text {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* ── Card Content ── */
+.wetcell-why-card-num {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+}
+
+.wetcell-why-card-text {
+    font-size: 13.5px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+    .wetcell-why-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .wetcell-why-heading {
+        font-size: 42px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .wetcell-why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wetcell-why-heading {
+        font-size: 36px;
+    }
+
+    .wetcell-why {
+        padding: 4rem 1.5rem;
+    }
+}

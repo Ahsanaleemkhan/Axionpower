@@ -1,0 +1,315 @@
+/* ══════════════════════════════════════
+   AXION CMS – ADMIN STYLES
+   ══════════════════════════════════════ */
+
+/* ── Wrap ── */
+.axion-wrap {
+    max-width: 960px;
+    margin: 20px auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.axion-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 20px;
+}
+
+/* ── Tabs ── */
+.axion-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0;
+}
+
+.axion-tab {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #64748b;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    transition: all 0.2s;
+}
+
+.axion-tab:hover {
+    color: #0ea5e9;
+}
+
+.axion-tab--active {
+    color: #0ea5e9;
+    border-bottom-color: #0ea5e9;
+}
+
+/* ── Section Cards ── */
+.axion-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.axion-section-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+}
+
+.axion-section-card:hover {
+    border-color: #0ea5e9;
+    box-shadow: 0 2px 8px rgba(14, 165, 233, 0.1);
+    transform: translateX(4px);
+}
+
+.axion-section-card--filled {
+    border-left: 3px solid #22c55e;
+}
+
+.axion-section-card__icon {
+    font-size: 24px;
+    flex-shrink: 0;
+    width: 40px;
+    text-align: center;
+}
+
+.axion-section-card__info {
+    flex: 1;
+}
+
+.axion-section-card__title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
+}
+
+.axion-section-card__status {
+    font-size: 12px;
+    color: #94a3b8;
+    margin: 2px 0 0;
+}
+
+.axion-section-card__arrow {
+    font-size: 18px;
+    color: #94a3b8;
+}
+
+/* ── Section Edit ── */
+.axion-back {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 13px;
+    color: #0ea5e9;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.axion-back:hover {
+    text-decoration: underline;
+}
+
+.axion-section-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 24px;
+}
+
+/* ── Form ── */
+.axion-form {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+/* ── Field ── */
+.axion-field {
+    margin-bottom: 20px;
+}
+
+.axion-field__label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+.axion-field__desc {
+    font-size: 12px;
+    color: #94a3b8;
+    margin: -2px 0 6px;
+}
+
+.axion-input {
+    width: 100%;
+    max-width: 600px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background: #f8fafc;
+    color: #1e293b;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.axion-input:focus {
+    outline: none;
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+}
+
+.axion-textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.axion-select {
+    max-width: 300px;
+    cursor: pointer;
+}
+
+/* ── Image Field ── */
+.axion-image-field {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.axion-image-preview {
+    width: 80px;
+    height: 80px;
+    border: 2px dashed #d1d5db;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8fafc;
+}
+
+.axion-image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ── Repeater ── */
+.axion-repeater {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px;
+    background: #f8fafc;
+    max-width: 700px;
+}
+
+.axion-repeater__rows {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.axion-repeater__row {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.axion-repeater__row-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: #f1f5f9;
+    cursor: grab;
+}
+
+.axion-repeater__row-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.axion-repeater__remove {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #ef4444;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0 4px;
+}
+
+.axion-repeater__row-fields {
+    padding: 12px;
+}
+
+.axion-repeater__row-fields .axion-field {
+    margin-bottom: 12px;
+}
+
+.axion-repeater__row-fields .axion-field:last-child {
+    margin-bottom: 0;
+}
+
+.axion-repeater__row-fields .axion-input {
+    max-width: 100%;
+}
+
+.axion-repeater__add {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* ── Actions ── */
+.axion-form__actions {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.axion-reset-btn {
+    color: #dc2626 !important;
+    border-color: #fca5a5 !important;
+}
+
+.axion-reset-btn:hover {
+    background: #fef2f2 !important;
+    border-color: #ef4444 !important;
+    color: #b91c1c !important;
+}
+
+/* ── Success Notice ── */
+.axion-notice {
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-bottom: 16px;
+    background: #f0fdf4;
+    color: #16a34a;
+    border: 1px solid #bbf7d0;
+}
+
+.axion-notice--reset {
+    background: #fefce8;
+    color: #a16207;
+    border-color: #fde68a;
+}

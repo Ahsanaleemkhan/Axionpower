@@ -1,0 +1,18 @@
+services:
+  axion:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_WP_GRAPHQL_URL: ${NEXT_PUBLIC_WP_GRAPHQL_URL}
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_WP_GRAPHQL_URL=${NEXT_PUBLIC_WP_GRAPHQL_URL}
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s

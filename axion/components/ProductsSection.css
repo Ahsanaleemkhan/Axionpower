@@ -1,0 +1,273 @@
+/* ══════════════════════════════════════
+   PRODUCTS SECTION STYLES
+   ══════════════════════════════════════ */
+
+/* ── Intro Block (Light BG) ── */
+.products-intro {
+    background: #f5f5f5;
+    padding: 2.5rem 0 8rem;
+    border-radius: 100px 100px 0 0;
+    margin-top: -6rem;
+    position: relative;
+    z-index: 3;
+}
+
+.products-intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.products-label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.products-label-bar {
+    width: 3px;
+    height: 18px;
+    background: #0EA5E9;
+    border-radius: 2px;
+}
+
+.products-label-text {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #0EA5E9;
+    text-transform: uppercase;
+}
+
+.products-intro-heading {
+    font-size: clamp(24px, 3.5vw, 36px);
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.35;
+    margin: 0 0 2rem;
+    width: 100%;
+}
+
+.products-intro-heading strong {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.products-intro-heading .grey-text {
+    color: #64748b;
+}
+
+.products-intro-btn {
+    display: inline-block;
+    padding: 0.55rem 1.8rem;
+    background: #0EA5E9;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.products-intro-btn:hover {
+    background: #38BDF8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(14, 165, 233, 0.3);
+}
+
+/* ── Product Cards Container ── */
+.products-cards {
+    background: #0a0a14;
+    padding: 4rem 0 4rem;
+    border-radius: 100px 100px 0 0;
+    margin-top: -6rem;
+    position: relative;
+    z-index: 4;
+}
+
+.products-cards-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+/* ── Single Product Card ── */
+.product-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.product-card.reversed {
+    direction: rtl;
+}
+
+.product-card.reversed>* {
+    direction: ltr;
+}
+
+/* ── Card Text Side ── */
+.product-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-number {
+    font-size: 52px;
+    font-weight: 800;
+    color: #0EA5E9;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-inter), sans-serif;
+}
+
+.product-name {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 1rem;
+    line-height: 1.2;
+}
+
+.product-description {
+    font-size: 13px;
+    color: #94a3b8;
+    line-height: 1.7;
+    margin: 0 0 1.25rem;
+}
+
+.product-highlights-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 0.7rem;
+}
+
+.product-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.product-tag {
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    background: #1e293b;
+    color: #cbd5e1;
+    font-size: 14px;
+    border-radius: 12px 0 12px 0;
+    border: 1px solid #334155;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.product-apps-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 0.7rem;
+}
+
+.product-apps-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.product-learn-btn {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 0.5rem 1.5rem;
+    background: #0EA5E9;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.product-learn-btn:hover {
+    background: #38BDF8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(14, 165, 233, 0.3);
+}
+
+/* ── Card Image Side ── */
+.product-image-wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    display: block;
+    max-height: 420px;
+}
+
+/* Lightning bolt with bg pad */
+.bolt-pad {
+    position: absolute;
+    z-index: 2;
+    background: #0a0a14;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 45px;
+}
+
+.bolt-pad.top-left {
+    top: 0;
+    left: 0;
+    border-radius: 0 0 80px 0;
+}
+
+.bolt-pad.bottom-right {
+    bottom: 0;
+    right: 0;
+    border-radius: 80px 0 0 0;
+}
+
+.bolt-icon {
+    width: 55px;
+    height: auto;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .product-card {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .product-card.reversed {
+        direction: ltr;
+    }
+
+    .products-intro-heading {
+        font-size: 22px;
+    }
+
+    .product-number {
+        font-size: 40px;
+    }
+
+    .product-name {
+        font-size: 22px;
+    }
+}
